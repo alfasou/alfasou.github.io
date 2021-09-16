@@ -93,11 +93,22 @@ h2{
 a{
     color:inherit;
     text-decoration:none;
-    transition: color 0.5s;
 }
 
 a:hover{
     color:indigo;
+    transition: color 0.5s;
+}
+
+.icon{
+    fill:white;
+    width: 28px;
+    height: 28px;
+}
+
+.trovo:hover{
+    fill:indigo;
+    transition: all 0.5s;
 }
 
 p{
