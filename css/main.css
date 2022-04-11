@@ -1,12 +1,14 @@
 /* CSS start */
 html,body{
-    background: linear-gradient(160deg, indigo 20%, plum 100%);
+    background: linear-gradient(160deg, indigo 20%, rebeccapurple 40%, blueviolet 60%, mediumpurple 80%, plum 100%);
+    background-size: 300%;
     font-family:"Poppins",sans-serif;
     font-size:15px;
     line-height:1.5;
     text-align:center;
     list-style-position: inside;
-    color: lavender
+    color: lavender;
+    animation: colors 40s linear infinite;
 }
 
 html{
@@ -143,3 +145,8 @@ footer p{
 }
 
 
+@keyframes colors {
+    0% { background-position: 0px 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0px 50%; }
+}
