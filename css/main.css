@@ -28,7 +28,7 @@ img{
     border-style:none;
     width:200px;
     border-radius:100px;
-    margin:5% auto 2% auto;
+    margin:3% auto 2% auto;
 }
 
 h1{
@@ -141,7 +141,7 @@ article{
 
 footer p{
     font-size: 10px;
-    margin: 50px auto;
+    margin: 50px auto 10px auto;
 }
 
 
