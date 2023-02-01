@@ -8,7 +8,7 @@ html,body{
     text-align:center;
     list-style-position: inside;
     color: lavender;
-    animation: colors 40s linear infinite;
+    animation: colors 10s linear infinite;
 }
 
 html{
