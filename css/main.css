@@ -1,156 +1,160 @@
 /* CSS start */
-html,body{
-    background: linear-gradient(160deg, indigo 20%, rebeccapurple 40%, blueviolet 60%, mediumpurple 80%, plum 100%);
-    background-size: 100%;
-    font-family:"Poppins",sans-serif;
-    font-size:1em;
-    line-height:1.5;
-    text-align:center;
-    list-style-position: inside;
-    color: lavender;
-    animation: colors 10s linear infinite;
-}
-
-html{
-    overflow-x:hidden
-}
-
+html,
 body {
-    min-height: 100%;
+  background: linear-gradient(160deg, indigo 20%, rebeccapurple 40%, blueviolet 60%, mediumpurple 80%, plum 100%);
+  background-size: 300%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+  list-style-position: inside;
+  color: lavender;
+  animation: colors 10s linear infinite;
+  min-height: 100%;
 }
 
-header{
-    position:relative;
-    display:block;
-    padding:0;
-    top:0;
-    height:auto;
+header {
+  position: relative;
+  display: block;
+  padding: 0;
+  top: 0;
+  height: auto;
 }
 
-img{
-    vertical-align:middle;
-    border-style:none;
-    width:200px;
-    border-radius:100px;
-    margin:3% auto 2% auto;
+img {
+  vertical-align: middle;
+  border-style: none;
+  width: 200px;
+  border-radius: 100px;
+  margin: 20px auto 30px auto;
 }
 
-h1{
-    font-size:1.2em;
-    font-weight:400;
-    margin:10px 0 0 0;
-    text-transform:uppercase
+h1 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 10px 0 0 0;
+  text-transform: uppercase;
 }
 
-h2{
-    font-size:1.2em;
-    font-weight:400;
-    margin:0 0 20px 0;
+h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 0 0 20px 0;
 }
 
-section{
-    margin-top:3%;
+section {
+  margin-top: 40px;
 }
 
 .icon::before {
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-  }
-
-.accordion{
-    background-color: mediumpurple;
-    color: white;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size:1em;
-    font-weight:400;
-    margin:10px auto;
-    border-radius:50px;
-    width:250px;
-    padding: 10px;
-
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
 }
 
-.active, .accordion:hover {
-    background-color: lavender;
-    color:mediumpurple;
-    transition: all 0.5s ease-in-out ;
-  }
+.accordion {
+  background-color: mediumpurple;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 10px auto;
+  border-radius: 50px;
+  width: 250px;
+  padding: 10px;
+}
+
+.active,
+.accordion:hover {
+  background-color: lavender;
+  color: mediumpurple;
+  transition: all 0.5s ease-in-out;
+}
 
 .accordion:after {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0dd"; /* Unicode character for "plus" sign (+) */
-    float: right;
-    margin-left: 5px;
-    transition: transform 0.5s;
-  }
-  
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f0dd'; /* Unicode character for "plus" sign (+) */
+  float: right;
+  margin-left: 5px;
+  transition: transform 0.5s;
+}
+
 .active:after {
-    transform: rotate(180deg); /* Unicode character for "minus" sign (-) */
-  }
-
-.panel{
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.4s ease-in-out;
-  }
-
-a{
-    color:inherit;
-    text-decoration:none;
+  transform: rotate(180deg); /* Unicode character for "minus" sign (-) */
 }
 
-a:hover{
-    color:indigo;
-    transition: color 0.5s;
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
 }
 
-.icon{
-    fill:white;
-    width: 28px;
-    height: 28px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.trovo:hover{
-    fill:indigo;
-    transition: all 0.5s;
+a:hover {
+  color: indigo;
+  transition: color 0.5s;
 }
 
-p{
-    font-size:14px;
-    font-weight:300;
-    margin:20px 0
+.icon {
+  fill: white;
+  width: 28px;
+  height: 28px;
 }
 
-article{
-    margin-top:1%;
+.trovo:hover {
+  fill: indigo;
+  transition: all 0.5s;
 }
 
-.social{
-    display: flex;
-    justify-content:center;  
-    transition: max-height 0.2s ease-out;  
+p {
+  font-size: 14px;
+  font-weight: 300;
+  margin: 20px 0;
 }
 
-.social a{
-    font-size:1.5em;
-    padding:20px;
-
+article {
+  margin-top: 1%;
 }
 
-footer p{
-    font-size: 0.7em;
-    margin: 50px auto 10px auto;
+.social {
+  display: flex;
+  justify-content: center;
+  transition: max-height 0.2s ease-in-out;
 }
 
+.social a {
+  font-size: 1.5em;
+  padding: 20px;
+}
+
+footer p {
+  font-size: 0.7em;
+  margin: 50px auto 10px auto;
+  padding: 50px;
+}
+
+footer i {
+  font-size: 0.6em;
+  padding: 5px;
+}
 
 @keyframes colors {
-    0% { background-position: 0px 50%; }
-	50% { background-position: 100% 50%; }
-	100% { background-position: 0px 50%; }
+  0% {
+    background-position: 0px 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0px 50%;
+  }
 }
