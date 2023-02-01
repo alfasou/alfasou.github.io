@@ -3,6 +3,7 @@ html,
 body {
   background: linear-gradient(160deg, indigo 20%, rebeccapurple 40%, blueviolet 60%, mediumpurple 80%, plum 100%);
   background-size: 300%;
+  min-height: 100%;
   font-family: 'Poppins', sans-serif;
   font-size: 1em;
   line-height: 1.5;
@@ -10,6 +11,10 @@ body {
   list-style-position: inside;
   color: lavender;
   animation: colors 10s linear infinite;
+}
+
+body {
+  background: transparent;
   min-height: 100%;
 }
 
@@ -66,6 +71,7 @@ section {
   border-radius: 50px;
   width: 250px;
   padding: 10px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .active,
@@ -78,9 +84,9 @@ section {
 .accordion:after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: '\f0dd'; /* Unicode character for "plus" sign (+) */
+  font-size: 1em;
+  content: '\f078'; /* Unicode character for "plus" sign (+) */
   float: right;
-  margin-left: 5px;
   transition: transform 0.5s;
 }
 
@@ -100,7 +106,12 @@ a {
 }
 
 a:hover {
-  color: indigo;
+  color: plum;
+  transition: color 0.5s;
+}
+
+.tooltip:hover {
+  color: plum;
   transition: color 0.5s;
 }
 
@@ -111,7 +122,7 @@ a:hover {
 }
 
 .trovo:hover {
-  fill: indigo;
+  fill: plum;
   transition: all 0.5s;
 }
 
@@ -132,8 +143,13 @@ article {
 }
 
 .social a {
-  font-size: 1.5em;
+  font-size: 1.8em;
   padding: 20px;
+}
+
+.social .tooltip {
+  font-size: 1.8em;
+  padding: 0 20px;
 }
 
 footer p {
@@ -147,14 +163,88 @@ footer i {
   padding: 5px;
 }
 
+/* INÍCIO TOOLTIP */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  font-size: 11px;
+  font-weight: 100;
+  visibility: hidden;
+  width: 120px;
+  background-color: indigo;
+  color: white;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: indigo transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* FIM TOOLTIP */
+
+/* INÍCIO SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: lavender;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background: mediumpurple;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rebeccapurple;
+}
+
+/* FIM SCROLLBAR */
+
 @keyframes colors {
   0% {
-    background-position: 0px 50%;
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 75% 50%;
   }
   50% {
     background-position: 100% 50%;
   }
+  75% {
+    background-position: 75% 50%;
+  }
   100% {
-    background-position: 0px 50%;
+    background-position: 0 50%;
   }
 }
