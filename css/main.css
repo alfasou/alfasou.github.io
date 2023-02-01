@@ -172,19 +172,20 @@ footer i {
 }
 
 .tooltip .tooltiptext {
-  font-size: 0.6em;
+  font-size: 11px;
+  font-weight: 100;
   visibility: hidden;
-  width: 140px;
+  width: 120px;
   background-color: indigo;
   color: white;
   text-align: center;
-  border-radius: 6px;
+  border-radius: 15px;
   padding: 5px;
   position: absolute;
   z-index: 1;
   bottom: 110%;
   left: 50%;
-  margin-left: -70px;
+  margin-left: -60px;
   opacity: 0;
   transition: opacity 0.3s;
 }
