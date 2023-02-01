@@ -64,15 +64,20 @@
             </a>
           </div>
           <div class="social">
-            <a href="alfasou#4348" target="_blank" aria-label="usu&aacute;rio do discord">
+            <span class="tooltip" role="button" onclick="copyText()" onmouseout="outFunc()" aria-label="id do discord">
               <i class="fab fa-discord" aria-hidden="true"></i>
-            </a>
-            <a href="https://facebook.com/alfasou.tv" target="_blank" aria-label="link para facebook">
-              <i class="fab fa-facebook-square" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.youtube.com/channel/UCCyTatRj9aZlFJn9KxXjJYQ" target="_blank" aria-label="link para youtube">
-              <i class="fab fa-youtube" aria-hidden="true"></i>
-            </a>
+              <span class="tooltiptext" id="discordTooltip">alfasou#4348</span>
+            </span>
+            <span>
+              <a href="https://facebook.com/alfasou.tv" target="_blank" aria-label="link para facebook">
+                <i class="fab fa-facebook-square" aria-hidden="true"></i>
+              </a>
+            </span>
+            <span>
+              <a href="https://www.youtube.com/channel/UCCyTatRj9aZlFJn9KxXjJYQ" target="_blank" aria-label="link para youtube">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+              </a>
+            </span>
           </div>
         </div>
       </article>
@@ -134,5 +139,6 @@
 
     <!-- Scripts -->
     <script src="js/scripts.js"></script>
+    <script src="js/discord.js"></script>
   </body>
 </html>
