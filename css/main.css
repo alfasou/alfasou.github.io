@@ -1,7 +1,7 @@
 /* CSS start */
 html,body{
     background: linear-gradient(160deg, indigo 20%, rebeccapurple 40%, blueviolet 60%, mediumpurple 80%, plum 100%);
-    background-size: 300%;
+    background-size: 100%;
     font-family:"Poppins",sans-serif;
     font-size:1em;
     line-height:1.5;
