@@ -13,6 +13,11 @@ body {
   animation: colors 10s linear infinite;
 }
 
+body {
+  background: transparent;
+  min-height: 100%;
+}
+
 header {
   position: relative;
   display: block;
@@ -66,6 +71,7 @@ section {
   border-radius: 50px;
   width: 250px;
   padding: 10px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .active,
@@ -78,9 +84,9 @@ section {
 .accordion:after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  content: '\f0dd'; /* Unicode character for "plus" sign (+) */
+  font-size: 1em;
+  content: '\f078'; /* Unicode character for "plus" sign (+) */
   float: right;
-  margin-left: 5px;
   transition: transform 0.5s;
 }
 
@@ -100,12 +106,12 @@ a {
 }
 
 a:hover {
-  color: indigo;
+  color: plum;
   transition: color 0.5s;
 }
 
 .tooltip:hover {
-  color: indigo;
+  color: plum;
   transition: color 0.5s;
 }
 
@@ -116,7 +122,7 @@ a:hover {
 }
 
 .trovo:hover {
-  fill: indigo;
+  fill: plum;
   transition: all 0.5s;
 }
 
@@ -137,12 +143,12 @@ article {
 }
 
 .social a {
-  font-size: 1.5em;
+  font-size: 1.8em;
   padding: 20px;
 }
 
 .social .tooltip {
-  font-size: 1.5em;
+  font-size: 1.8em;
   padding: 0 20px;
 }
 
