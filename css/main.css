@@ -35,14 +35,7 @@ img {
 }
 
 h1 {
-  font-size: 1.2em;
-  font-weight: 400;
-  margin: 10px 0 0 0;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 1.2em;
+  font-size: 1.6em;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -116,12 +109,12 @@ a:hover {
 }
 
 .icon {
-  fill: white;
+  fill: lavender;
   width: 28px;
   height: 28px;
 }
 
-.trovo:hover {
+.icon-hover:hover {
   fill: plum;
   transition: all 0.5s;
 }
@@ -129,7 +122,7 @@ a:hover {
 p {
   font-size: 14px;
   font-weight: 300;
-  margin: 20px 0;
+  margin: 0 0 3px 0;
 }
 
 article {
@@ -144,6 +137,7 @@ article {
 
 .social a {
   font-size: 1.8em;
+  width: 70px;
   padding: 20px;
 }
 
