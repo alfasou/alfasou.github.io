@@ -8,5 +8,5 @@ function copyText() {
 
 function outFunc() {
   var tooltip = document.getElementById('discordTooltip');
-  tooltip.innerHTML = 'alfasou#4348';
+  tooltip.innerHTML = 'alfasou';
 }
