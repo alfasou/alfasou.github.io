@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+html,
+body {
+  background: linear-gradient(160deg, indigo 20%, rebeccapurple 40%, blueviolet 60%, mediumpurple 80%, plum 100%);
+  background-size: 300%;
+  min-height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+  text-align: center;
+  list-style-position: inside;
+  color: lavender;
+  animation: colors 10s linear infinite;
+}
+
+body {
+  background: transparent;
+  min-height: 100%;
+}
+
+header {
+  position: relative;
+  display: block;
+  padding: 0;
+  top: 0;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  width: 200px;
+  border-radius: 100px;
+  margin: 20px auto 10px auto;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.icon::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon {
+  fill: lavender;
+  margin-bottom: -2px !important;
+  width: 28px;
+  height: 28px;
+}
+
+section {
+  margin-top: 40px;
+}
+
+article {
+  margin-top: 1%;
+}
+
+.accordion {
+  background-color: mediumpurple;
+  color: lavender;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 400;
+  margin: 10px auto;
+  border-radius: 50px;
+  width: 250px;
+  padding: 10px;
+  box-shadow: 0 5px 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.active,
+.accordion:hover {
+  background-color: lavender;
+  color: mediumpurple;
+  transition: all 0.5s ease-in-out;
+}
+
+.accordion:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1em;
+  content: "\f078";
+  float: right;
+  transition: transform 0.5s;
+}
+
+.active:after {
+  transform: rotate(180deg);
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+p {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin: 0 0 3px 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: plum;
+  transition: color 0.5s;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.social a {
+  font-size: 1.8em;
+  width: 70px;
+  padding: 20px;
+}
+
+.social .fa-discord {
+  font-size: 1.8em;
+  margin-top: 5px;
+  padding: 0 20px;
+}
+
+footer {
+  bottom: 0;
+}
+
+footer p {
+  font-size: 0.7em;
+  margin: 50px auto 0 auto;
+  padding: 0;
+}
+
+footer i {
+  font-size: 0.6em;
+  padding: 5px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltiptext {
+  font-size: 0.9em !important;
+  font-weight: 100 !important;
+  visibility: hidden;
+  width: 120px;
+  background-color: indigo;
+  color: lavender;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: indigo transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip:hover,
+.tooltip:hover svg {
+  color: plum;
+  stroke: plum;
+  transition: all 0.5s;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background: lavender;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background: mediumpurple;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: blueviolet;
+}
+
+@keyframes colors {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 75% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}/*# sourceMappingURL=style.css.map */

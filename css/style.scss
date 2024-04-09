@@ -1,0 +1,278 @@
+// VARIABLES
+$lighter-color: lavender;
+$light-color: plum;
+$medium-color: mediumpurple;
+$darker-medium-color: blueviolet;
+$dark-color: rebeccapurple;
+$darker-color: indigo;
+$transparent: rgb(0, 0, 0, 0);
+$light-shadow: rgb(0, 0, 0, 0.1);
+$dark-shadow: rgb(0, 0, 0, 0.3);
+$font-size-smaller: 0.6em;
+$font-size-small: 0.7em;
+$font-size-medium: 0.9em;
+$font-size-normal: 1em;
+$font-size-large: 1.8em;
+$font-size-larger: 2em;
+$font-weight-extrathin: 100;
+$font-weight-thin: 300;
+$font-weight-light: 400;
+$font-weight-bold: 600;
+$font-weight-bolder: 900;
+
+
+//TEXT
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+// GENERAL
+html,
+body {
+  background: linear-gradient(160deg, $darker-color 20%, $dark-color 40%, $darker-medium-color 60%, $medium-color 80%, $light-color 100%);
+  background-size: 300%;
+  min-height: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-size: $font-size-normal;
+  line-height: 1.5;
+  text-align: center;
+  list-style-position: inside;
+  color: $lighter-color;
+  animation: colors 10s linear infinite;
+}
+
+body {
+  background: transparent;
+  min-height: 100%;
+}
+
+
+//HEADER
+header {
+  position: relative;
+  display: block;
+  padding: 0;
+  top: 0;
+  height: auto;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  width: 200px;
+  border-radius: 100px;
+  margin: 20px auto 10px auto;
+}
+
+h1 {
+  font-size: $font-size-larger;
+  font-weight: $font-weight-light;
+  margin: 0;
+}
+
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+.icon {
+    fill: $lighter-color;
+    margin-bottom: -2px !important;
+    width: 28px;
+    height: 28px;
+}
+
+
+//CONTENT
+section {
+  margin-top: 40px;
+}
+
+article {
+  margin-top: 1%;
+}
+
+.accordion {
+  background-color: $medium-color;
+  color: $lighter-color;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: $font-size-normal;
+  font-weight: $font-weight-light;
+  margin: 10px auto;
+  border-radius: 50px;
+  width: 250px;
+  padding: 10px;
+  box-shadow: 0 5px 10px 2px $light-shadow;
+}
+
+.active,
+.accordion:hover {
+  background-color: $lighter-color;
+  color: $medium-color;
+  transition: all 0.5s ease-in-out;
+}
+
+.accordion:after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: $font-weight-bolder;
+  font-size: $font-size-normal;
+  content: '\f078';
+  float: right;
+  transition: transform 0.5s;
+}
+
+.active:after {
+  transform: rotate(180deg);
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out;
+}
+
+p {
+    font-size: $font-size-medium;
+    font-weight: $font-weight-thin;
+    margin: 0 0 3px 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $light-color;
+  transition: color 0.5s;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.social a {
+  font-size: $font-size-large;
+  width: 70px;
+  padding: 20px;
+}
+
+.social .fa-discord {
+  font-size: $font-size-large;
+  margin-top: 5px;
+  padding: 0 20px;
+}
+
+
+//FOOTER
+footer {
+  bottom: 0;
+}
+
+footer p {
+  font-size: $font-size-small;
+  margin: 50px auto 0 auto;
+  padding: 0;
+}
+
+footer i {
+  font-size: $font-size-smaller;
+  padding: 5px;
+}
+
+
+//TOOLTIP
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltiptext {
+  font-size: $font-size-medium !important;
+  font-weight: $font-weight-extrathin !important;
+  visibility: hidden;
+  width: 120px;
+  background-color: $darker-color;
+  color: $lighter-color;
+  text-align: center;
+  border-radius: 15px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: $darker-color transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip:hover,
+.tooltip:hover svg{
+  color: $light-color;
+  stroke: $light-color;
+  transition: all 0.5s;
+}
+
+
+//SCROLLBAR
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px $dark-shadow;
+  background: $lighter-color;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px $dark-shadow;
+  border-radius: 10px;
+  background: $medium-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $darker-medium-color;
+}
+
+
+//ANIMATION
+@keyframes colors {
+  0% {
+    background-position: 0 50%;
+  }
+  25% {
+    background-position: 75% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 75% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
