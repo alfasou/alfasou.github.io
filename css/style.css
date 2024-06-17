@@ -129,13 +129,19 @@ a:hover {
 .social a {
   font-size: 1.8em;
   width: 70px;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .social .fa-discord {
   font-size: 1.8em;
-  margin-top: 5px;
-  padding: 0 20px;
+}
+
+.social .tooltip {
+  padding: 6px 18.2px;
+}
+
+.tooltip .svg {
+  margin-top: 10px !important;
 }
 
 footer {

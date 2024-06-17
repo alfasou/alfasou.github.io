@@ -84,7 +84,6 @@ h1 {
     height: 28px;
 }
 
-
 //CONTENT
 section {
   margin-top: 40px;
@@ -160,13 +159,19 @@ a:hover {
 .social a {
   font-size: $font-size-large;
   width: 70px;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .social .fa-discord {
   font-size: $font-size-large;
-  margin-top: 5px;
-  padding: 0 20px;
+}
+
+.social .tooltip {
+  padding: 6px 18.2px;
+}
+
+.tooltip .svg {
+  margin-top: 10px !important;
 }
 
 
