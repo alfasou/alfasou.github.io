@@ -28,8 +28,6 @@ $font-weight-bolder: 900;
 // GENERAL
 html,
 body {
-  background: linear-gradient(160deg, $darker-color 20%, $dark-color 40%, $darker-medium-color 60%, $medium-color 80%, $light-color 100%);
-  background-size: 300%;
   min-height: 100%;
   font-family: 'Poppins', sans-serif;
   font-size: $font-size-normal;
@@ -37,14 +35,17 @@ body {
   text-align: center;
   list-style-position: inside;
   color: $lighter-color;
-  animation: colors 10s linear infinite;
 }
 
-body {
-  background: transparent;
-  min-height: 100%;
+.content-container {
+  position:absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99;
 }
-
 
 //HEADER
 header {
@@ -170,8 +171,18 @@ a:hover {
   padding: 6px 18.2px;
 }
 
-.tooltip .svg {
-  margin-top: 10px !important;
+.header-icon:hover,
+.header-icon:hover svg{
+  color: $light-color;
+  stroke: $light-color;
+  transition: all 0.5s;
+}
+
+.tooltipbutton:hover i,
+.tooltipbutton:hover svg{
+  color: $light-color;
+  fill: $light-color;
+  transition: all 0.5s;
 }
 
 
@@ -234,13 +245,6 @@ footer i {
   opacity: 1;
 }
 
-.tooltip:hover,
-.tooltip:hover svg{
-  color: $light-color;
-  stroke: $light-color;
-  transition: all 0.5s;
-}
-
 
 //SCROLLBAR
 ::-webkit-scrollbar {
@@ -260,24 +264,4 @@ footer i {
 
 ::-webkit-scrollbar-thumb:hover {
   background: $darker-medium-color;
-}
-
-
-//ANIMATION
-@keyframes colors {
-  0% {
-    background-position: 0 50%;
-  }
-  25% {
-    background-position: 75% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 75% 50%;
-  }
-  100% {
-    background-position: 0 50%;
-  }
 }

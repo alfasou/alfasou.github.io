@@ -1,5 +1,5 @@
 # alfasou
 
-<div align="center">
-  <p>site pessoal/cartão virtual com links sociais e profissionais</p>
-</div>
+site pessoal/cartão virtual com links sociais e profissionais
+
+:desktop_computer: background desenvolvido por [baunov](https://github.com/baunov/gradients-bg)
