@@ -1,8 +1,8 @@
 function accordionOpen() {
-  let acc = document.getElementsByClassName('accordion');
+  let btnAccordion = document.getElementsByClassName('accordion');
   
-  for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener('click', function() {
+  for (let i = 0; i < btnAccordion.length; i++) {
+    btnAccordion[i].addEventListener('click', () => {
       this.classList.toggle('active');
       let panel = this.nextElementSibling;
       if (panel.style.maxHeight) {
@@ -18,7 +18,7 @@ function idCopy() {
   let btnTooltip = document.getElementsByClassName('tooltipbutton');
 
   for (let i = 0; i < btnTooltip.length; i++) {
-    btnTooltip[i].addEventListener('click', function() {
+    btnTooltip[i].addEventListener('click', () => {
       let tooltips = this.querySelector('.tooltiptext');
       let originalText = tooltips.textContent.trim();
   
@@ -27,7 +27,7 @@ function idCopy() {
     
           setTimeout(() => {
             tooltips.textContent = originalText;
-          }, 1000);
+          }, 2000);
         }).catch(err => {
             console.error('Erro ao copiar texto: ', err);
           });
