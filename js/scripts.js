@@ -2,9 +2,9 @@ function accordionOpen() {
   let btnAccordion = document.getElementsByClassName('accordion');
   
   for (let i = 0; i < btnAccordion.length; i++) {
-    btnAccordion[i].addEventListener('click', () => {
+    btnAccordion[i].addEventListener('click', acc => {
       this.classList.toggle('active');
-      let panel = this.nextElementSibling;
+      let panel = acc.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
       } else {
@@ -18,8 +18,8 @@ function idCopy() {
   let btnTooltip = document.getElementsByClassName('tooltipbutton');
 
   for (let i = 0; i < btnTooltip.length; i++) {
-    btnTooltip[i].addEventListener('click', () => {
-      let tooltips = this.querySelector('.tooltiptext');
+    btnTooltip[i].addEventListener('click', tts => {
+      let tooltips = tts.querySelector('.tooltiptext');
       let originalText = tooltips.textContent.trim();
   
         navigator.clipboard.writeText(originalText).then(() => {
