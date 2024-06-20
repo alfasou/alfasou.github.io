@@ -3,7 +3,7 @@ function accordionOpen() {
   
   for (let i = 0; i < btnAccordion.length; i++) {
     btnAccordion[i].addEventListener('click', acc => {
-      this.classList.toggle('active');
+      acc.classList.toggle('active');
       let panel = acc.nextElementSibling;
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null;
