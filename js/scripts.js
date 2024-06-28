@@ -29,7 +29,7 @@ function idCopy() {
 
 					setTimeout(() => {
 						tooltips.textContent = originalText;
-					}, 1000);
+					}, 1300);
 				})
 				.catch((err) => {
 					console.error('Erro ao copiar texto: ', err);
