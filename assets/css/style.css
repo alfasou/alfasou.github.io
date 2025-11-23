@@ -229,4 +229,8 @@ footer i {
   background: blueviolet;
 }
 
-/*# sourceMappingURL=style.css.map */
+@media (max-width: 600px) {
+  img {
+    width: 100vw;
+  }
+}
