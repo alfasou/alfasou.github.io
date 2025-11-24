@@ -228,9 +228,3 @@ footer i {
 ::-webkit-scrollbar-thumb:hover {
   background: blueviolet;
 }
-
-@media (max-width: 600px) {
-  img {
-    width: 100vw;
-  }
-}

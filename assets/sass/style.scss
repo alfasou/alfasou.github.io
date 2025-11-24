@@ -258,10 +258,3 @@ footer i {
 ::-webkit-scrollbar-thumb:hover {
   background: $darker-medium-color;
 }
-
-// MEDIA QUERIES
-@media (max-width: 600px) {
-  img {
-    width: 100vw;
-  }
-}
