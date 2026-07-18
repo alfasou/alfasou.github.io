@@ -56,6 +56,8 @@ header {
 
 img {
   vertical-align: middle;
+  height: 200px;
+  width: 200px;
   margin: 0px auto 0px auto;
 }
 
@@ -166,6 +168,10 @@ a:hover {
   padding: 6px 18.2px;
 }
 
+.personal {
+  margin-top: 10px;
+}
+
 .header-icon:hover,
 .header-icon:hover svg {
   color: $light-color;
@@ -188,7 +194,7 @@ footer {
 footer p {
   font-size: $font-size-small;
   margin: 50px auto 0 auto;
-  padding: 0;
+  padding: 0 0 50px 0;
 }
 
 footer i {
